@@ -157,9 +157,13 @@ input,textarea,select{
 .dark .form-shell input,.dark .form-shell textarea,.dark .form-shell select{background:rgba(255,255,255,.92)}
 textarea{min-height:130px;resize:vertical}
 .ribbon{
-  display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;
+  display:block;
   padding:24px 28px;border-radius:28px;background:linear-gradient(135deg,#24180f,#533b22);color:#fff;box-shadow:var(--shadow)
 }
+.ribbon-copy{min-width:0}
+.ribbon-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:18px}
+.ribbon-cta{display:flex;margin-left:auto}
+.ribbon-cta .btn{white-space:nowrap}
 .badges{display:flex;gap:10px;flex-wrap:wrap}
 .badge{
   display:inline-flex;padding:8px 12px;border-radius:999px;background:#f5ead8;color:#6d522a;font-size:.82rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-decoration:none
@@ -216,6 +220,8 @@ textarea{min-height:130px;resize:vertical}
   .hero-card,.form-shell,.article,.hero-mini,.ribbon{padding:22px}
   .hero-actions{flex-direction:column;align-items:stretch}
   .hero-actions .btn{width:100%}
+  .ribbon-actions{align-items:flex-start}
+  .ribbon-cta{margin-left:0}
   .container{width:min(var(--max), calc(100% - 24px))}
   .toc{padding:14px}
   .footer{padding:42px 0 24px}
