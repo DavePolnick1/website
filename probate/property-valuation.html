@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Houston Probate Property Valuation | David Polnick</title>
+  <meta name="description" content="Request a complimentary probate property valuation for inherited real estate in the Greater Houston Area.">
+  <meta name="keywords" content="Houston probate property valuation, inherited property valuation Houston, estate home value Houston, probate home valuation, Greater Houston property valuation, Harris County inherited house value, Montgomery County probate valuation">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+    :root{
+      --bg:#11100d;
+      --bg2:#1b1712;
+      --paper:#fbf7f1;
+      --paper2:#f2e8db;
+      --ink:#231f1a;
+      --muted:#665d53;
+      --line:#e2d6c6;
+      --gold:#b48a49;
+      --gold2:#8b6733;
+      --radius:24px;
+      --shadow:0 24px 60px rgba(0,0,0,.18);
+      --max:1180px;
+      --font-body:"Manrope","Segoe UI",Arial,sans-serif;
+      --font-display:"Cormorant Garamond","Times New Roman",serif;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:var(--font-body);
+      color:#fff;
+      background:linear-gradient(180deg,#15120f 0%, #0d0b09 100%);
+    }
+    a{color:inherit}
+    .container{width:min(var(--max), calc(100% - 32px));margin:0 auto}
+    .topbar{
+      background:#070605;
+      border-bottom:1px solid rgba(255,255,255,.08);
+      color:#f2e8db;
+      font-size:.94rem;
+    }
+    .topbar .inner{
+      display:flex;justify-content:space-between;gap:16px;align-items:center;flex-wrap:wrap;padding:10px 0;
+    }
+    .topbar a{text-decoration:none}
+    .hero{
+      position:relative;
+      min-height:82vh;
+      display:flex;
+      align-items:end;
+      overflow:hidden;
+    }
+    .hero-video{
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+    .hero:before{
+      content:"";
+      position:absolute;inset:0;
+      background:
+        linear-gradient(180deg,rgba(10,9,8,.16) 0%, rgba(10,9,8,.58) 36%, rgba(10,9,8,.88) 100%),
+        radial-gradient(circle at 22% 18%, rgba(180,138,73,.30), transparent 25%),
+        linear-gradient(135deg,#2e2216 0%, #705332 45%, #171310 100%);
+      z-index:1;
+    }
+    .hero .container{position:relative;z-index:2;padding:74px 0 48px}
+    .hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:26px;align-items:end}
+    .glass{
+      backdrop-filter:blur(12px);
+      background:rgba(24,20,16,.58);
+      border:1px solid rgba(255,255,255,.1);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+    }
+    .hero-card{padding:38px}
+    .eyebrow{
+      display:inline-flex;
+      padding:8px 12px;
+      border-radius:999px;
+      background:rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.1);
+      color:#f7e8cf;
+      font-weight:700;
+      font-size:.82rem;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+      margin-bottom:14px;
+    }
+    h1,h2,h3{font-family:var(--font-display);font-weight:600;letter-spacing:.01em;line-height:.98;margin:0 0 14px}
+    h1{font-size:clamp(2.5rem,6vw,4.8rem);max-width:11ch}
+    h2{font-size:clamp(1.8rem,4vw,2.7rem)}
+    h3{font-size:1.55rem}
+    p{margin:0 0 14px}
+    .lead{font-size:1.1rem;color:#efe6da;max-width:60ch;line-height:1.75}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;
+      padding:14px 18px;border-radius:999px;text-decoration:none;
+      background:linear-gradient(135deg,var(--gold),var(--gold2));
+      color:#fff;font-weight:700;border:none;box-shadow:var(--shadow);
+      letter-spacing:.08em;text-transform:uppercase;
+    }
+    .btn.secondary{
+      background:transparent;border:1px solid rgba(255,255,255,.18);box-shadow:none;
+    }
+    .checklist{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:10px}
+    .checklist li{display:flex;gap:12px;align-items:flex-start}
+    .checklist li:before{
+      content:"✓";
+      width:24px;height:24px;border-radius:999px;display:grid;place-items:center;
+      background:rgba(180,138,73,.25);flex:0 0 auto;font-weight:800
+    }
+    .form-shell{padding:28px}
+    .form-shell p{color:#eadfce}
+    form{display:grid;gap:12px;margin-top:12px}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    input,textarea,select{
+      width:100%;padding:14px;border-radius:14px;border:1px solid rgba(255,255,255,.14);
+      background:rgba(255,255,255,.94);color:#201c18;font:inherit
+    }
+    textarea{min-height:120px;resize:vertical}
+    .section{padding:74px 0;background:var(--paper);color:var(--ink)}
+    .section.alt{background:linear-gradient(180deg,#faf3e9 0%, #f1e7d8 100%)}
+    .section.dark{background:linear-gradient(180deg,#17130f 0%, #0f0d0b 100%);color:#fff}
+    .kicker{
+      text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;font-weight:700;
+      color:var(--gold2);margin-bottom:10px
+    }
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .grid-2b{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}
+    .card{
+      background:#fff;border:1px solid var(--line);border-radius:22px;padding:24px;
+      box-shadow:0 18px 50px rgba(52,33,12,.08)
+    }
+    .card p{color:var(--muted)}
+    .icon{
+      width:54px;height:54px;border-radius:16px;background:linear-gradient(135deg,#f5ead8,#e5d0ae);
+      display:grid;place-items:center;color:#735327;font-weight:800;margin-bottom:14px
+    }
+    .notice{
+      padding:14px 16px;border-radius:16px;background:#f6eddf;border:1px solid #eadcc9;color:#4f4539
+    }
+    .faq{display:grid;gap:12px}
+    details{
+      background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px 18px;
+      box-shadow:0 12px 30px rgba(52,33,12,.05)
+    }
+    summary{cursor:pointer;font-weight:700}
+    .ribbon{
+      display:flex;justify-content:space-between;gap:18px;align-items:center;flex-wrap:wrap;
+      padding:24px 28px;border-radius:28px;background:linear-gradient(135deg,#24180f,#563d23);
+      color:#fff;box-shadow:var(--shadow)
+    }
+    footer{
+      background:#0b0907;color:#e6d9c8;padding:44px 0 24px;border-top:1px solid rgba(255,255,255,.08)
+    }
+    footer a{text-decoration:none}
+    .small{font-size:.92rem}
+    @media (max-width: 980px){
+      .hero-grid,.grid-3,.grid-2,.grid-2b{grid-template-columns:1fr}
+      .hero{min-height:auto}
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container inner">
+      <div>Greater Houston Area</div>
+      <div>
+        <a href="tel:+18323810915">Call or Text (832) 381-0915</a> ·
+        <a href="mailto:davidpolnickrealestate@gmail.com">davidpolnickrealestate@gmail.com</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="hero">
+      <video class="hero-video" autoplay muted loop playsinline aria-hidden="true">
+        <source src="../assets/video/hero-background.mp4" type="video/mp4">
+      </video>
+      <div class="container hero-grid">
+        <div class="glass hero-card">
+          <div class="eyebrow">Probate Property Valuation</div>
+          <h1>Need to know what an inherited property is worth?</h1>
+          <p class="lead">Request a complimentary probate property valuation for an estate home in the Greater Houston Area, with practical guidance on value, sale options, and next steps.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#valuation-form">Request Property Value</a>
+            <a class="btn secondary" href="/probate/">Visit Probate Center</a>
+          </div>
+          <ul class="checklist">
+            <li>Helpful for executors, heirs, and families handling inherited property</li>
+            <li>Clear guidance on value, as-is sale options, and next steps</li>
+            <li>Designed for probate-related seller leads in the Greater Houston Area</li>
+          </ul>
+        </div>
+
+        <div class="glass form-shell" id="valuation-form">
+          <h3>Request a Complimentary Probate Property Evaluation</h3>
+          <p>Tell us a little about the property and where you are in the process.</p>
+          <form action="/forms/form-handler.php" method="post">
+            <input type="hidden" name="subject" value="Probate property valuation request">
+            <input type="hidden" name="interest" value="probate">
+            <div class="grid-2">
+              <input name="name" placeholder="Name" required>
+              <input name="phone" placeholder="Phone" required>
+            </div>
+            <div class="grid-2">
+              <input name="email" type="email" placeholder="Email" required>
+              <input name="details" placeholder="Property address">
+            </div>
+            <div class="grid-2">
+              <select name="property_condition">
+                <option>Property condition</option>
+                <option>Move-in ready</option>
+                <option>Needs light updates</option>
+                <option>Needs repairs</option>
+                <option>Not sure yet</option>
+              </select>
+              <select name="timeline">
+                <option>Timeline to sell</option>
+                <option>As soon as possible</option>
+                <option>Within 30-60 days</option>
+                <option>Within 3-6 months</option>
+                <option>Still exploring options</option>
+              </select>
+            </div>
+            <textarea name="message" placeholder="Tell me anything helpful about the property or estate situation."></textarea>
+            <button type="submit" class="btn">Request Property Value</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="kicker">How This Helps</div>
+        <h2>Built for executors and heirs who are close to making a decision.</h2>
+        <div class="grid-3" style="margin-top:24px;">
+          <div class="card">
+            <div class="icon">1</div>
+            <h3>Immediate Value</h3>
+            <p>Executors often want one thing first: a realistic value for the estate property so they can plan next steps clearly.</p>
+          </div>
+          <div class="card">
+            <div class="icon">2</div>
+            <h3>Low-Friction Next Step</h3>
+            <p>A straightforward valuation request makes it easier to get answers without adding more stress to an already complicated process.</p>
+          </div>
+          <div class="card">
+            <div class="icon">3</div>
+            <h3>Probate-Specific Messaging</h3>
+            <p>The guidance is tailored to inherited property situations rather than a generic home sale.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container grid-2b">
+        <div>
+          <div class="kicker">Your Options</div>
+          <h2>There are usually three practical paths for an inherited home.</h2>
+          <ul class="checklist" style="color:#2b241d">
+            <li><strong>Sell as-is.</strong> Often the cleanest option when the estate wants speed and simplicity.</li>
+            <li><strong>Do light preparation.</strong> Sometimes cleanup, paint, or minor work improves the final result.</li>
+            <li><strong>Wait and plan.</strong> Some families need more time before making a final decision.</li>
+          </ul>
+        </div>
+        <div class="notice">
+          A valuation is often the best starting point because it helps the family compare those options using current market reality instead of guesswork.
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="kicker">Common Questions</div>
+        <h2>Questions executors often ask before listing.</h2>
+        <div class="faq" style="margin-top:22px;">
+          <details open>
+            <summary>Can an executor sell a house during probate in Texas?</summary>
+            <p>That depends on the structure of the estate and the authority involved, but many families want to understand value and sale options before the property is officially listed.</p>
+          </details>
+          <details>
+            <summary>Should repairs be made before selling?</summary>
+            <p>Some homes benefit from light work. Others are better sold as-is. A valuation plus a practical market opinion usually makes that decision easier.</p>
+          </details>
+          <details>
+            <summary>What if multiple heirs are involved?</summary>
+            <p>Clear communication and a shared understanding of value often help reduce conflict and move the process forward more smoothly.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark">
+      <div class="container ribbon">
+        <div>
+          <h3 style="margin-bottom:6px;">Executor traffic should turn into appointments.</h3>
+          <p style="margin:0;">Use this landing page for probate SEO pages, direct mail QR codes, email campaigns, attorney referrals, and Google ads.</p>
+        </div>
+        <a class="btn" href="#valuation-form">Request a Consultation</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p class="small">
+        David Polnick, Realtor · Probate Real Estate Help in the Greater Houston Area<br>
+        <a href="/probate/">Probate Resource Center</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
