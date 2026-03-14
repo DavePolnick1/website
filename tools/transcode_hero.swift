@@ -1,8 +1,29 @@
 import Foundation
 import AVFoundation
 
-let sourceURL = URL(fileURLWithPath: "/Users/davidsmacbookpro/Downloads/davidpolnick_site_with_authority_page/assets/video/hero-background.mov")
-let outputURL = URL(fileURLWithPath: "/Users/davidsmacbookpro/Downloads/davidpolnick_site_with_authority_page/assets/video/hero-background.mp4")
+let fileManager = FileManager.default
+let currentDirectoryURL = URL(fileURLWithPath: fileManager.currentDirectoryPath)
+let projectRootURL = currentDirectoryURL
+let arguments = CommandLine.arguments
+
+let sourceURL: URL
+if arguments.count > 1 {
+    sourceURL = URL(fileURLWithPath: arguments[1], relativeTo: currentDirectoryURL).standardizedFileURL
+} else {
+    sourceURL = projectRootURL.appendingPathComponent("assets/video/hero-background.mov")
+}
+
+let outputURL: URL
+if arguments.count > 2 {
+    outputURL = URL(fileURLWithPath: arguments[2], relativeTo: currentDirectoryURL).standardizedFileURL
+} else {
+    outputURL = projectRootURL.appendingPathComponent("assets/video/hero-background.mp4")
+}
+
+guard fileManager.fileExists(atPath: sourceURL.path) else {
+    fputs("Source video not found: \(sourceURL.path)\n", stderr)
+    exit(1)
+}
 
 let asset = AVURLAsset(url: sourceURL)
 
@@ -18,8 +39,8 @@ guard supportedTypes.contains(.mp4) else {
     exit(1)
 }
 
-if FileManager.default.fileExists(atPath: outputURL.path) {
-    try FileManager.default.removeItem(at: outputURL)
+if fileManager.fileExists(atPath: outputURL.path) {
+    try fileManager.removeItem(at: outputURL)
 }
 
 exportSession.outputURL = outputURL
@@ -27,16 +48,19 @@ exportSession.outputFileType = .mp4
 exportSession.shouldOptimizeForNetworkUse = true
 
 let semaphore = DispatchSemaphore(value: 0)
+
 exportSession.exportAsynchronously {
     semaphore.signal()
 }
+
 semaphore.wait()
 
 switch exportSession.status {
 case .completed:
     print("Export completed: \(outputURL.path)")
 case .failed:
-    fputs("Export failed: \(exportSession.error?.localizedDescription ?? "Unknown error")\n", stderr)
+    let errorDescription = exportSession.error.map { "\($0.localizedDescription) (\($0))" } ?? "Unknown error"
+    fputs("Export failed: \(errorDescription)\n", stderr)
     exit(1)
 case .cancelled:
     fputs("Export cancelled.\n", stderr)
