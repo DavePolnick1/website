@@ -74,6 +74,31 @@ img{display:block;max-width:100%}
   border-color:rgba(255,255,255,.18);
   box-shadow:var(--shadow);
 }
+.card-actions{display:flex;flex-direction:column;gap:12px}
+.card-secondary-btn{
+  background:#fdf6ea;
+  color:#6f5127;
+  border:2px solid #8d6935;
+  outline:1px solid rgba(111,81,39,.35);
+  outline-offset:0;
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.45);
+}
+.card-secondary-btn:hover,
+.card-secondary-btn:focus-visible{
+  background:linear-gradient(135deg,var(--gold),var(--gold-2));
+  color:#fff;
+  border-color:#8d6935;
+  outline:1px solid rgba(111,81,39,.35);
+  box-shadow:var(--shadow);
+}
+.card-actions:has(.btn:hover) .btn:not(:hover),
+.card-actions:has(.btn:focus-visible) .btn:not(:focus-visible){
+  background:#fffdf8;
+  color:#6f5127;
+  border:1px solid #8d6935;
+  outline:1px solid rgba(111,81,39,.28);
+  box-shadow:none;
+}
 .hero{
   position:relative;overflow:hidden;min-height:84vh;display:flex;align-items:end;
 }
