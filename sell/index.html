@@ -400,22 +400,98 @@
         margin: 0 auto 22px;
         color: var(--muted);
       }
-      footer {
-        padding: 30px 0 54px;
+      .site-footer {
+        padding: 38px 0 54px;
         color: var(--muted);
-        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.02),
+          rgba(255, 255, 255, 0.01)
+        );
       }
-      .footer-line {
-        width: 120px;
-        height: 1px;
-        background: var(--line);
-        margin: 0 auto 18px;
+      .site-footer h3 {
+        font-size: 1.05rem;
+        margin-bottom: 10px;
+      }
+      .site-footer p {
+        margin: 0 0 12px;
+        color: var(--muted);
+      }
+      .site-footer a {
+        color: inherit;
+      }
+      .footer-grid {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr 1fr;
+        gap: 24px;
+      }
+      .footer-logos {
+        display: flex;
+        gap: 18px;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 14px;
+      }
+      .footer-logos img {
+        max-height: 54px;
+        width: auto;
+      }
+      .footer-social {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-top: 10px;
+      }
+      .footer-social a {
+        width: 38px;
+        height: 38px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.03);
+      }
+      .footer-social a[href*='instagram.com'] {
+        color: #f9d6a2;
+        background: linear-gradient(
+          135deg,
+          rgba(131, 58, 180, 0.22),
+          rgba(225, 48, 108, 0.28),
+          rgba(253, 29, 29, 0.18),
+          rgba(252, 176, 69, 0.22)
+        );
+      }
+      .footer-social a[href*='facebook.com'] {
+        color: #dbe7ff;
+        background: linear-gradient(
+          135deg,
+          rgba(24, 119, 242, 0.34),
+          rgba(255, 255, 255, 0.08)
+        );
+      }
+      .footer-social svg {
+        width: 18px;
+        height: 18px;
+        fill: currentColor;
+      }
+      .legal {
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        margin-top: 24px;
+        padding-top: 20px;
+        font-size: 0.92rem;
+        color: #d9c9b4;
+      }
+      .small {
+        font-size: 0.92rem;
       }
       @media (max-width: 980px) {
         .hero-grid,
         .adv-grid,
         .tier-wrap,
-        .steps {
+        .steps,
+        .footer-grid {
           grid-template-columns: 1fr;
         }
         .form-card {
@@ -438,7 +514,7 @@
           <div class="hero-grid">
             <div>
               <div class="hero-brand">
-              <div class="hero-logo" aria-hidden="true">
+                <div class="hero-logo" aria-hidden="true">
                   <img src="../assets/conductor-logo.png" alt="" />
                 </div>
                 <div class="hero-brand-copy">
@@ -667,6 +743,46 @@
       <section>
         <div class="wrap">
           <div class="section-head">
+            <h2>Why a home warranty helps sellers</h2>
+            <p>
+              Including a home warranty is not just a nice extra. It can make a
+              seller's position stronger by reducing buyer hesitation,
+              supporting peace of mind, and helping the transaction feel safer
+              from contract to closing.
+            </p>
+          </div>
+          <div class="adv-grid">
+            <div class="card adv-item">
+              <h3>It helps buyers feel more comfortable</h3>
+              <p class="muted">
+                Buyers are often nervous about unexpected repair costs. A home
+                warranty can ease that concern and make your home feel like a
+                safer decision.
+              </p>
+            </div>
+            <div class="card adv-item">
+              <h3>It can reduce friction during negotiations</h3>
+              <p class="muted">
+                When buyers know there is warranty protection in place, it can
+                help support confidence during inspection conversations and keep
+                smaller repair concerns from becoming bigger deal issues.
+              </p>
+            </div>
+            <div class="card adv-item">
+              <h3>It adds value without overcomplicating the sale</h3>
+              <p class="muted">
+                A home warranty is a practical way to make your listing feel
+                more complete and better protected, while reinforcing that the
+                sale is being handled with professionalism and care.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap">
+          <div class="section-head">
             <h2>What it looks like to work with David</h2>
             <p>
               A simple, high-touch process designed to remove uncertainty,
@@ -715,7 +831,7 @@
       <section>
         <div class="wrap">
           <div class="section-head">
-            <h2>Seller questions</h2>
+            <h2>FAQs</h2>
             <p>
               Clear answers help sellers make confident decisions. Here are a
               few of the questions that come up most often before hiring the
@@ -781,14 +897,93 @@
       </section>
     </main>
 
-    <footer>
-      <div class="wrap">
-        <div class="footer-line"></div>
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
         <div>
-          David Polnick | Greater Houston Area Listing Strategy | (832)381-0915
-          | davidpolnickrealestate@gmail.com
+          <h3>David Polnick, Realtor</h3>
+          <p>
+            Commercial • Residential • Probate Real Estate<br />Greater Houston
+            Area
+          </p>
+          <div class="footer-logos">
+            <img
+              src="../assets/img/sway-logo.png"
+              alt="Sway Real Estate Group LLC"
+            />
+            <img src="../assets/img/exp-white-logo.png" alt="eXp Realty" />
+          </div>
+          <p class="small" style="margin-top: 10px">
+            Part of the Sway Real Estate Group LLC
+          </p>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <p>
+            <a href="tel:+18323810915">(832) 381-0915</a><br />
+            <a href="mailto:davidpolnickrealestate@gmail.com"
+              >davidpolnickrealestate@gmail.com</a
+            >
+          </p>
+          <div class="footer-social">
+            <a
+              href="https://www.instagram.com/david_polnick_realtor/"
+              aria-label="Instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9Zm9.75 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"
+                /></svg
+            ></a>
+            <a
+              href="https://www.facebook.com/davidpolnickrealtor/"
+              aria-label="Facebook"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M13.5 22v-8h2.7l.5-3h-3.2V9.1c0-.9.4-1.8 1.9-1.8H17V4.7c-.3 0-1.2-.2-2.4-.2-2.4 0-4.1 1.4-4.1 4.2V11H8v3h2.5v8h3Z"
+                /></svg
+            ></a>
+          </div>
+          <p class="small" style="margin-top: 14px">
+            Brokered by eXp Realty, LLC<br />
+            One Riverway, Ste. 1700, Houston, TX 77056
+          </p>
+        </div>
+        <div>
+          <h3>Compliance</h3>
+          <p>
+            <a
+              href="https://www.har.com/mhf/terms/dispBrokerInfo?sitetype=aws&cid=808866"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Information About Brokerage Services</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://content.harstatic.com/pdf/TREC_CPN.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Texas Real Estate Commission Consumer Protection Notice</a
+            >
+          </p>
+          <p>
+            <a href="../privacy-policy.html">Privacy Policy</a><br /><a
+              href="../terms-of-service.html"
+              >Terms of Service</a
+            >
+          </p>
         </div>
       </div>
+      <div class="wrap legal">
+        © <span data-year></span> David Polnick, Realtor
+      </div>
     </footer>
+    <script>
+      document.querySelector('[data-year]').textContent =
+        new Date().getFullYear();
+    </script>
   </body>
 </html>
