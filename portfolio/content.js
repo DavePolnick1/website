@@ -1,7 +1,7 @@
 // Replace sample descriptions, documents, and embed URLs with your own work.
 window.portfolio = {
  name: 'David Polnick', role: 'CRE Analyst',
- bioTitle: "Bridging Real Estate Experience with Financial Analysis",
+ bioTitle: "Bridging Real Estate Experience with Investment Underwriting",
  bio: ["I'm a licensed Texas real estate professional with a growing focus on commercial real estate investment analysis, financial modeling, and asset valuation. After building a career that spans education, leadership, and residential real estate, I'm pursuing an opportunity to transition into a commercial real estate analyst role where I can combine my industry experience, analytical abilities, and passion for solving complex financial problems.", "My experience in real estate has given me a practical understanding of property transactions, market dynamics, contract negotiations, and the factors that influence real estate value. To build on that foundation, I've dedicated significant time to developing my technical skills in commercial real estate underwriting, discounted cash flow analysis, investment valuation, and advanced Excel financial modeling.", "Through independent study and hands-on modeling exercises, I've been developing proficiency in evaluating multifamily, industrial, retail, and other commercial investment opportunities. My work focuses on understanding the financial drivers behind investment decisions, including cash flow projections, capitalization rates, debt structures, internal rates of return, and investment risk.", "My goal is to join a commercial real estate investment, acquisitions, asset management, or valuation team where I can contribute meaningful analysis while continuing to develop into a highly skilled industry professional.", "This portfolio showcases my financial modeling projects, underwriting exercises, and investment analyses. It represents both the technical skills I've developed and my commitment to building a long-term career in commercial real estate.", "I bring a combination of real-world real estate experience, a strong work ethic, intellectual curiosity, and a genuine enthusiasm for the analytical side of the industry. I'm eager to put those qualities to work for a team that values precision, collaboration, and continuous professional growth."],
  studies: [
  {id:'multifamily', title:'The multifamily investment thesis', type:'Multifamily', subtitle:'Acquisition underwriting · Value-add strategy', image:'photo-1460317442991-0ec209397118', description:'An illustrative framework for evaluating a multifamily acquisition. The analysis connects in-place operations, renovation assumptions, and financing terms to the potential investment outcome.', question:'Does the operating upside justify the acquisition basis and execution risk?', approach:['Review the rent roll and normalize operating income.','Evaluate renovation costs, lease-up timing, and market rent assumptions.','Test exit cap rates, financing terms, and downside scenarios.'], documents:[], excelEmbedUrl:''},
@@ -14,7 +14,7 @@ window.portfolio = {
 window.portfolio.studies[0] = {
   "id": "the-foles-i",
   "title": "The Foles I",
-  "subtitle": "Direct Cap Analysis",
+  "subtitle": "Direct Capitalization",
   "type": "Multifamily",
   "label": "COURSE CASE STUDY",
   "imageUrl": "assets/the-foles-i/cover.jpg",
@@ -98,7 +98,7 @@ window.portfolio.studies[1] = {
 window.portfolio.studies[2] = {
   "id": "lakefront-industrial-i",
   "title": "Lakefront Industrial I",
-  "subtitle": "Hold/Sell Analysis",
+  "subtitle": "Hold or Sell",
   "type": "Industrial",
   "label": "COURSE CASE STUDY",
   "imageUrl": "assets/lakefront-industrial-i/cover.jpg",
@@ -163,7 +163,7 @@ window.portfolio.studies.push({
 window.portfolio.studies.push({
   "id": "jellystone-retail",
   "title": "Jellystone Retail",
-  "subtitle": "Retail Income Statement Analysis",
+  "subtitle": "Retail Income Statements",
   "type": "Retail",
   "label": "COURSE CASE STUDY",
   "imageUrl": "assets/jellystone-retail/cover.jpg",
@@ -186,7 +186,7 @@ window.portfolio.studies.push({
 window.portfolio.studies.push({
   "id": "jellystone-apartments",
   "title": "Jellystone Apartments",
-  "subtitle": "Multifamily Rent Roll Analysis",
+  "subtitle": "Multifamily Rent Roll Review",
   "type": "Multifamily",
   "label": "COURSE CASE STUDY",
   "imageUrl": "assets/jellystone-apartments/cover.jpg",
@@ -210,7 +210,7 @@ window.portfolio.studies.push({
 window.portfolio.studies.push({
   "id": "office-park",
   "title": "Office Park",
-  "subtitle": "Office Income Statement Analysis",
+  "subtitle": "Office Income Statements",
   "type": "Office",
   "label": "COURSE CASE STUDY",
   "imageUrl": "assets/office-park/cover.jpg",
@@ -233,7 +233,7 @@ window.portfolio.studies.push({
 window.portfolio.studies.push({
   "id": "hotel",
   "title": "Hotel",
-  "subtitle": "Hotel Income Statement Analysis",
+  "subtitle": "Hotel Income Statements",
   "type": "Hotel",
   "label": "COURSE CASE STUDY",
   "imageUrl": "assets/hotel/cover.jpg",
@@ -268,7 +268,7 @@ window.portfolio.studies.push({
 window.portfolio.studies.push({
   "id": "industrial",
   "title": "Industrial",
-  "subtitle": "Industrial Income Statement Analysis",
+  "subtitle": "Industrial Income Statements",
   "type": "Industrial",
   "label": "COURSE CASE STUDY",
   "imageUrl": "assets/industrial/cover.jpg",
@@ -291,7 +291,7 @@ window.portfolio.studies.push({
 window.portfolio.studies.push({
   "id": "lakefront-retail-long-term-lease",
   "title": "Lakefront Retail Long Term Lease",
-  "subtitle": "Long-Term Lease Analysis",
+  "subtitle": "Long-Term Lease Underwriting",
   "type": "Retail",
   "label": "COURSE CASE STUDY",
   "imageUrl": "assets/lakefront-retail-long-term-lease/cover.jpg",
@@ -326,7 +326,7 @@ window.portfolio.studies.push({
 window.portfolio.studies.push({
   "id": "parcel-32",
   "title": "Parcel 32",
-  "subtitle": "Development Cash Flow Analysis",
+  "subtitle": "Development Cash Flow Modeling",
   "type": "Development",
   "label": "COURSE CASE STUDY",
   "imageUrl": "assets/parcel-32/cover.jpg",
@@ -358,7 +358,7 @@ window.portfolio.studies.push({
 window.portfolio.studies.push({
   "id": "financing-the-foles",
   "title": "Financing the Foles",
-  "subtitle": "Debt Financing Analysis",
+  "subtitle": "Acquisition Financing",
   "type": "Multifamily",
   "label": "COURSE CASE STUDY",
   "imageUrl": "assets/financing-the-foles/cover.jpg",
@@ -398,7 +398,7 @@ window.portfolio.studies.push({
 window.portfolio.studies.push({
   "id": "frost-and-main",
   "title": "Frost and Main",
-  "subtitle": "Partnership Cash Flow Analysis",
+  "subtitle": "Partnership Cash Flow Modeling",
   "type": "Mixed-use",
   "label": "COURSE CASE STUDY",
   "imageUrl": "assets/frost-and-main/cover.jpg",
@@ -425,7 +425,7 @@ window.portfolio.capstoneStudyNumbers = [14, 15, 16];
 window.portfolio.studies.push({
   "id": "bronze-gym",
   "title": "Bronze Gym",
-  "subtitle": "Single-Tenant Acquisition Analysis",
+  "subtitle": "Single-Tenant Acquisition Underwriting",
   "sequence": 14,
   "capstone": true,
   "type": "Retail",
@@ -514,7 +514,7 @@ window.portfolio.studies.push({
 window.portfolio.studies.push({
   "id": "multifamily-value-add",
   "title": "Multifamily Value Add",
-  "subtitle": "Value-Add Acquisition Analysis",
+  "subtitle": "Value-Add Acquisition Underwriting",
   "sequence": 16,
   "capstone": true,
   "type": "Multifamily",
