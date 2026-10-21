@@ -48,3 +48,11 @@
   .cards .card,.cards .card .card-image b,.cards .card .card-bottom b{transition:none}
   .cards .card:hover,.cards .card:focus-visible,.cards .card:hover .card-image b,.cards .card:focus-visible .card-image b,.cards .card:hover .card-bottom b,.cards .card:focus-visible .card-bottom b{transform:none}
 }
+
+/* Make mouseover immediately visible, independently of click/focus state. */
+.cards .card{transition:transform .2s ease,outline-color .2s ease,box-shadow .2s ease,background-color .2s ease}
+.cards .card:hover{background:#e5ebe1;transform:translateY(-5px);outline:2px solid #82987b;outline-offset:10px;box-shadow:0 16px 24px -22px #203d3466}
+.cards .card:hover .card-image b{transform:translate(2px,-2px);background:#dbe5d8}
+.cards .card:hover .card-bottom b{transform:translateX(4px)}
+.cards .card[hidden]{display:none}
+@media(prefers-reduced-motion:reduce){.cards .card{transition:none}.cards .card:hover,.cards .card:hover .card-image b,.cards .card:hover .card-bottom b{transform:none}}
