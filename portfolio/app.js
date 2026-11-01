@@ -1,21 +1,30 @@
 const p=window.portfolio, app=document.querySelector('#app');
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function safeURL(value){if(!value)return null;try{const u=new URL(value,location.href);return ['https:','http:'].includes(u.protocol)?u.href:null}catch{return null}}
-function workbookOpenURL(w){
- // Explicit sharing links carry their own access token and must remain intact.
- if(w.excelOpenUrl)return safeURL(w.excelOpenUrl)?w.excelOpenUrl:null;
- const value=safeURL(w.excelEmbedUrl);if(!value)return null;
- const u=new URL(value);if(u.hostname==='1drv.ms'){u.search='';u.hash=''}
- else if(u.hostname.endsWith('sharepoint.com')){u.searchParams.delete('action');u.searchParams.set('web','1')}
- else{for(const key of [...u.searchParams.keys()])if(/^(em|wd|waccluster|edaeb)/i.test(key))u.searchParams.delete(key);if(u.pathname==='/embed')u.pathname='/view.aspx'}
- return u.href;
+// The public production files can be viewed anonymously without OneDrive sharing.
+function publicWorkbookViewer(w,embedded=true){
+ if(!w.workbookUrl)return null;
+ const source=new URL(w.workbookUrl,'https://davidpolnick.com/portfolio/');
+ if(!['https:','http:'].includes(source.protocol))return null;
+ const viewer=new URL('https://view.officeapps.live.com/op/'+(embedded?'embed':'view')+'.aspx');
+ viewer.searchParams.set('src',source.href);
+ const saved=safeURL(w.excelEmbedUrl);
+ const active=saved?new URL(saved).searchParams.get('ActiveCell'):null;
+ if(active)viewer.searchParams.set('ActiveCell',active);
+ viewer.searchParams.set('wdHideGridlines','True');
+ viewer.searchParams.set('wdHideHeaders','True');
+ return viewer.href;
 }
-// Preserve Microsoft's supplied embed URL, including workbook-specific settings.
-function workbookEmbedURL(w){return safeURL(w.excelEmbedUrl)?w.excelEmbedUrl:null}
+function workbookOpenURL(w){
+ const hosted=publicWorkbookViewer(w,false);if(hosted)return hosted;
+ if(w.excelOpenUrl)return safeURL(w.excelOpenUrl)?w.excelOpenUrl:null;
+ return safeURL(w.excelEmbedUrl);
+}
+function workbookEmbedURL(w){return publicWorkbookViewer(w) || (safeURL(w.excelEmbedUrl)?w.excelEmbedUrl:null)}
 function workbookPanel(w,title){
  const embed=workbookEmbedURL(w),open=workbookOpenURL(w),download=safeURL(w.workbookUrl);
  const preview=download?.replace(/\.xlsx$/i,'.preview.html');
- return `<div class="workbook-actions">${download?`<a class="button" href="${esc(download)}" download>Download for Excel ↓</a>`:''}${open?`<a class="back" href="${esc(open)}" target="_blank" rel="noopener noreferrer">Open shared workbook ↗</a>`:''}</div><p class="workbook-help">${embed?'The Excel viewer below uses Microsoft OneDrive. If it is blank or Microsoft blocks access, download the original workbook and open it in Excel.':(download?'The live Excel viewer is awaiting its sharing link. Download the original workbook to explore the model in Excel.':'The live Excel viewer is awaiting its workbook link. The case study documents are available in the War Room below.')}</p>${embed?`<iframe title="${esc(title)} — Microsoft Excel viewer" src="${esc(embed)}" loading="lazy" allowfullscreen></iframe>`:''}${preview?`<details class="workbook-fallback"><summary>Show simplified, read-only preview</summary><p>This preview may differ from Excel formatting. Use the original workbook for the complete model.</p><iframe title="${esc(title)} — simplified saved values" data-preview-src="${esc(preview)}" loading="lazy"></iframe></details>`:''}`;
+ return `<div class="workbook-actions">${download?`<a class="button" href="${esc(download)}" download>Download for Excel ↓</a>`:''}${open?`<a class="back" href="${esc(open)}" target="_blank" rel="noopener noreferrer">Open workbook ↗</a>`:''}</div><p class="workbook-help">${embed?(download?'Explore a read-only Excel preview. Download the workbook to edit your own copy.':'This workbook is hosted in OneDrive. Its sharing settings must allow access without signing in for visitors to view it here.'):(download?'The live Excel viewer is awaiting its sharing link. Download the original workbook to explore the model in Excel.':'The live Excel viewer is awaiting its workbook link. The case study documents are available in the War Room below.')}</p>${embed?`<iframe title="${esc(title)} — Microsoft Excel viewer" src="${esc(embed)}" loading="lazy" allowfullscreen></iframe>`:''}${preview?`<details class="workbook-fallback"><summary>Show simplified, read-only preview</summary><p>This preview may differ from Excel formatting. Use the original workbook for the complete model.</p><iframe title="${esc(title)} — simplified saved values" data-preview-src="${esc(preview)}" loading="lazy"></iframe></details>`:''}`;
 }
 function enableWorkbookPreviews(){document.querySelectorAll('.workbook-fallback').forEach(details=>details.addEventListener('toggle',()=>{if(details.open){const frame=details.querySelector('iframe');if(!frame.getAttribute('src'))frame.src=frame.dataset.previewSrc}}))}
 function studyImage(s,width){return s.imageUrl || 'https://images.unsplash.com/'+s.image+'?auto=format&fit=crop&w='+width+'&q=85'}

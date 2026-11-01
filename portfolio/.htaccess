@@ -1,0 +1,4 @@
+# Serve downloadable Excel workbooks with the correct MIME type.
+<IfModule mod_mime.c>
+AddType application/vnd.openxmlformats-officedocument.spreadsheetml.sheet .xlsx
+</IfModule>
