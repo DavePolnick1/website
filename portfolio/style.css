@@ -56,3 +56,7 @@
 .cards .card:hover .card-bottom b{transform:translateX(4px)}
 .cards .card[hidden]{display:none}
 @media(prefers-reduced-motion:reduce){.cards .card{transition:none}.cards .card:hover,.cards .card:hover .card-image b,.cards .card:hover .card-bottom b{transform:none}}
+
+.workbook-actions{display:flex;align-items:center;flex-wrap:wrap;gap:20px;margin:24px 0}.workbook-actions .button,.workbook-actions .back{margin:0}.workbook-help{font-size:13px;color:var(--muted)}.workbook-fallback{margin-top:24px}.workbook-fallback summary{cursor:pointer;text-decoration:underline;padding:12px 0}.case-layout>div{min-width:0}
+
+@media(min-width:581px){.capstone-grid-expanded{grid-template-columns:repeat(2,minmax(0,1fr))}}

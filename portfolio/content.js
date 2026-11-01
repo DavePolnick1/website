@@ -13,6 +13,8 @@ window.portfolio = {
 // Uploaded case study 1 replaces the illustrative multifamily sample.
 window.portfolio.studies[0] = {
   "id": "the-foles-i",
+  "sequence": 1,
+  "capstone": false,
   "title": "The Foles I",
   "subtitle": "Direct Capitalization",
   "type": "Multifamily",
@@ -49,7 +51,8 @@ window.portfolio.studies[0] = {
       "url": "assets/the-foles-i/document-05.pdf"
     }
   ],
-  "excelEmbedUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQQg3rp2i8u4RKJZTzrNNCsyATrlKMVABSmzf1HGnN4K-tQ?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&waccluster=GES1&edaebp=&edaebf=res50",
+  "excelOpenUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQAg3rp2i8u4RKJZTzrNNCsyAbIKU-_arJ9JQp40C094q9c?e=vkLo10",
+  "excelEmbedUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQAg3rp2i8u4RKJZTzrNNCsyAbIKU-_arJ9JQp40C094q9c?e=vkLo10&action=embedview&wdAllowInteractivity=True&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&ActiveCell=%27Direct+Cap%27%21A1",
   "workbookUrl": "assets/the-foles-i/direct-cap-analysis.xlsx",
   "disclosure": "Course underwriting exercise — Part 1. The property location is provided in the assignment as Center City, Anycity, USA. This study focuses on direct capitalization; a 10-year DCF is outside its scope. Model outputs are estimates, not realized investment performance."
 };
@@ -57,6 +60,9 @@ window.portfolio.studies[0] = {
 // Uploaded case study 2 replaces the illustrative industrial sample.
 window.portfolio.studies[1] = {
   "id": "the-foles-ii",
+  "sequence": 2,
+  "capstone": false,
+  "workbookUrl": "assets/the-foles-ii/dcf-analysis.xlsx",
   "title": "The Foles II",
   "subtitle": "Discounted Cash Flow (DCF)",
   "type": "Multifamily",
@@ -90,13 +96,16 @@ window.portfolio.studies[1] = {
       "url": "assets/the-foles-ii/document-04.pdf"
     }
   ],
-  "excelEmbedUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQRF8Wq0uyX0RJhg5q1F7R-5AfvahaH-citAJKuaWukHj0I?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&waccluster=GUK1&edaebp=&edaebf=res50",
+  "excelOpenUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQBF8Wq0uyX0RJhg5q1F7R-5AaMf7xehRXXvxgrI6F4eYDQ?e=dGxKLG",
+  "excelEmbedUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQBF8Wq0uyX0RJhg5q1F7R-5AaMf7xehRXXvxgrI6F4eYDQ?e=dGxKLG&action=embedview&wdAllowInteractivity=True&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&ActiveCell=%27Direct+Cap%27%21A1",
   "disclosure": "Course underwriting exercise — Part 2. The analysis is intended to exclude financing effects and use year 11 NOI for exit valuation, net of selling costs. Projected returns are estimates, not realized investment performance."
 };
 
 // Uploaded case study 3 replaces the remaining illustrative sample.
 window.portfolio.studies[2] = {
   "id": "lakefront-industrial-i",
+  "sequence": 3,
+  "capstone": false,
   "title": "Lakefront Industrial I",
   "subtitle": "Hold or Sell",
   "type": "Industrial",
@@ -122,7 +131,8 @@ window.portfolio.studies[2] = {
       "url": "assets/lakefront-industrial-i/document-02.pdf"
     }
   ],
-  "excelEmbedUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQQcuYbaSMUPTK1k21tg6BNJAYSMaEy4pNXY0Nk-Ykm_AsU?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&waccluster=PUS6&edaebp=&edaebf=res50",
+  "excelOpenUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQAcuYbaSMUPTK1k21tg6BNJAUdVl4kq3OZW9t4MyqA7L4g?e=M6fE07",
+  "excelEmbedUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQAcuYbaSMUPTK1k21tg6BNJAUdVl4kq3OZW9t4MyqA7L4g?e=M6fE07&action=embedview&wdAllowInteractivity=True&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&ActiveCell=%27Sheet1%27%21A1",
   "workbookUrl": "assets/lakefront-industrial-i/hold-sell-analysis.xlsx",
   "disclosure": "Course underwriting exercise. The alternative investment, Smithtown Industrial IV, has a supplied projected unlevered IRR of 8.12%; this is a comparison benchmark, not Lakefront’s calculated return. Property details and assumptions are course-scenario inputs. Projected returns are estimates, not realized investment performance."
 };
@@ -130,6 +140,8 @@ window.portfolio.studies[2] = {
 // Uploaded case study 4.
 window.portfolio.studies.push({
   "id": "lakefront-industrial-ii",
+  "sequence": 4,
+  "capstone": false,
   "title": "Lakefront Industrial II",
   "subtitle": "Key Risk/Return Metrics",
   "type": "Industrial",
@@ -154,7 +166,8 @@ window.portfolio.studies.push({
       "url": "assets/lakefront-industrial-ii/document-02.pdf"
     }
   ],
-  "excelEmbedUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQTF4EBYFjnRTbfAdqgsT1-FAUPJ4MdSugobY5RcLPMx2cw?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&waccluster=PUS6&edaebp=&edaebf=res50",
+  "excelOpenUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQDF4EBYFjnRTbfAdqgsT1-FAVCON_dzUEJ5Dg9wahzO-gQ?e=hGpoOy",
+  "excelEmbedUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQDF4EBYFjnRTbfAdqgsT1-FAVCON_dzUEJ5Dg9wahzO-gQ?e=hGpoOy&action=embedview&wdAllowInteractivity=True&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&ActiveCell=%27Sheet1%27%21A1",
   "workbookUrl": "assets/lakefront-industrial-ii/key-metrics.xlsx",
   "disclosure": "Course underwriting exercise, titled “Lakefront Industrial I — Part II” in the assignment. This study extends the prior hold/sell model with additional metrics. The assignment describes initial IRR results as supporting consideration of a sale, with further analysis required before concluding. Projected returns are estimates, not realized investment performance."
 });
@@ -162,6 +175,8 @@ window.portfolio.studies.push({
 // Uploaded case study 5.
 window.portfolio.studies.push({
   "id": "jellystone-retail",
+  "sequence": 5,
+  "capstone": false,
   "title": "Jellystone Retail",
   "subtitle": "Retail Income Statements",
   "type": "Retail",
@@ -177,7 +192,8 @@ window.portfolio.studies.push({
     "Use the latest one, three, and six months of actual data to calculate annualized T1, T3, and T6 income and expenses.",
     "Compare the annualized cash flows and explain differences for the simulated underwriting interview."
   ],
-  "excelEmbedUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQRXNLQbW9J2SY8pChR2zOGMAW4q94TMbxEcz8RzZ-mjHPU?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&waccluster=GCL1&edaebp=&edaebf=res50",
+  "excelOpenUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQBXNLQbW9J2SY8pChR2zOGMARxQz0YRP57cbtymYY4YOb4?e=Q743vY",
+  "excelEmbedUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQBXNLQbW9J2SY8pChR2zOGMARxQz0YRP57cbtymYY4YOb4?e=Q743vY&action=embedview&wdAllowInteractivity=True&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&ActiveCell=%27Retail%27%21A1",
   "workbookUrl": "assets/jellystone-retail/income-statement.xlsx",
   "disclosure": "Course financial analysis exercise. T1 is the latest month multiplied by 12; T3 is the latest three months multiplied by 4; T6 is the latest six months multiplied by 2. These figures are annualized run-rate estimates, not full-year actual results. The interview context is part of the assignment scenario."
 });
@@ -185,6 +201,8 @@ window.portfolio.studies.push({
 // Uploaded case study 6.
 window.portfolio.studies.push({
   "id": "jellystone-apartments",
+  "sequence": 6,
+  "capstone": false,
   "title": "Jellystone Apartments",
   "subtitle": "Multifamily Rent Roll Review",
   "type": "Multifamily",
@@ -201,7 +219,8 @@ window.portfolio.studies.push({
     "Calculate loss-to-lease for occupied units as total market rent less total in-place rent.",
     "Calculate physical occupancy as occupied units divided by total units."
   ],
-  "excelEmbedUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQRhNisUOo4MQ7QfhhN6_sjnAWzDeIr7PgYN0MLEKrRvg6E?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&waccluster=GFR1&edaebp=&edaebf=res50",
+  "excelOpenUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQBhNisUOo4MQ7QfhhN6_sjnAb7sZCJPpxg7361itRmpQMw?e=ndqs7Q",
+  "excelEmbedUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQBhNisUOo4MQ7QfhhN6_sjnAb7sZCJPpxg7361itRmpQMw?e=ndqs7Q&action=embedview&wdAllowInteractivity=True&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&ActiveCell=%27Multifamily%27%21A1",
   "workbookUrl": "assets/jellystone-apartments/rent-roll-analysis.xlsx",
   "disclosure": "Course financial analysis exercise. Average assigned rent includes in-place rent for occupied units and market rent for vacant units; loss-to-lease is calculated for occupied units only. The interview context is part of the course scenario; no completed transaction or realized investment performance is represented."
 });
@@ -209,6 +228,8 @@ window.portfolio.studies.push({
 // Uploaded case study 7.
 window.portfolio.studies.push({
   "id": "office-park",
+  "sequence": 7,
+  "capstone": false,
   "title": "Office Park",
   "subtitle": "Office Income Statements",
   "type": "Office",
@@ -224,7 +245,8 @@ window.portfolio.studies.push({
     "Map and aggregate detailed line items into the summary office income statement categories.",
     "Present the summarized cash flows for review and discussion."
   ],
-  "excelEmbedUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQTYSX8qLTnmSq_xYT-1curhASSMNfiXEVGbyyfOO--q30w?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&waccluster=PUS11&edaebp=&edaebf=res50",
+  "excelOpenUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQDYSX8qLTnmSq_xYT-1curhAQX67np_jaQA_d4Ft61uK3I?e=QHQ4ub",
+  "excelEmbedUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQDYSX8qLTnmSq_xYT-1curhAQX67np_jaQA_d4Ft61uK3I?e=QHQ4ub&action=embedview&wdAllowInteractivity=True&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&ActiveCell=%27Office%27%21A1",
   "workbookUrl": "assets/office-park/income-statement.xlsx",
   "disclosure": "Course financial analysis exercise. The source operating statement covers the full calendar year ending December 31, 2019; T1, T3, and T6 annualization is outside the assignment scope. The interview context is part of the course scenario."
 });
@@ -232,6 +254,8 @@ window.portfolio.studies.push({
 // Uploaded case study 8.
 window.portfolio.studies.push({
   "id": "hotel",
+  "sequence": 8,
+  "capstone": false,
   "title": "Hotel",
   "subtitle": "Hotel Income Statements",
   "type": "Hotel",
@@ -259,7 +283,8 @@ window.portfolio.studies.push({
     "Apply the hotel income statement concepts covered in the course.",
     "Explain the completed inputs and the purpose and meaning of typical hotel income statement line items."
   ],
-  "excelEmbedUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQQ-g1jhio6ER6qRY9nQUhC_ATS8EAVp-vZHvs98SdG4x4s?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&waccluster=PUS15&edaebp=&edaebf=res50",
+  "excelOpenUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQA-g1jhio6ER6qRY9nQUhC_AcVQANiSg44aMo1uJ781A2U?e=peRoYj",
+  "excelEmbedUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQA-g1jhio6ER6qRY9nQUhC_AcVQANiSg44aMo1uJ781A2U?e=peRoYj&action=embedview&wdAllowInteractivity=True&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&ActiveCell=%27A.CRE+-+Hotel%27%21A1",
   "workbookUrl": "assets/hotel/income-statement.xlsx",
   "disclosure": "Course financial analysis exercise. The BBLP underwriting interview is part of the assignment scenario. The summary supplies no numerical financial results; the workbook and supporting materials contain the exercise data."
 });
@@ -267,6 +292,8 @@ window.portfolio.studies.push({
 // Uploaded case study 9.
 window.portfolio.studies.push({
   "id": "industrial",
+  "sequence": 9,
+  "capstone": false,
   "title": "Industrial",
   "subtitle": "Industrial Income Statements",
   "type": "Industrial",
@@ -282,7 +309,8 @@ window.portfolio.studies.push({
     "Calculate annual leasing cost reserves using the supplied market leasing assumptions and course methodology.",
     "Review historical cash flows and explain the reserve assumptions and supporting calculations."
   ],
-  "excelEmbedUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQRVHpEQDUScQp97V11nmUobAeG2VeiVWpX9sFyoRE1FVys?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&waccluster=GUK4&edaebp=&edaebf=res50",
+  "excelOpenUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQBVHpEQDUScQp97V11nmUobAbIx9gs-eJFNTJMXRpnCoCI?e=v8e2Iq",
+  "excelEmbedUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQBVHpEQDUScQp97V11nmUobAbIx9gs-eJFNTJMXRpnCoCI?e=v8e2Iq&action=embedview&wdAllowInteractivity=True&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&ActiveCell=%27Industrial%27%21A1",
   "workbookUrl": "assets/industrial/income-statement.xlsx",
   "disclosure": "Course financial analysis exercise. Market leasing inputs are supplied assignment assumptions: 70% renewal probability, $4.50/SF market rent, a seven-year typical lease term, new/renewal tenant improvements of $1.50/$0.50 per SF, and new/renewal leasing commissions of 5.0%/2.5%. The interview context is part of the course scenario; no realized investment performance is represented."
 });
@@ -290,6 +318,8 @@ window.portfolio.studies.push({
 // Uploaded case study 10.
 window.portfolio.studies.push({
   "id": "lakefront-retail-long-term-lease",
+  "sequence": 10,
+  "capstone": false,
   "title": "Lakefront Retail Long Term Lease",
   "subtitle": "Long-Term Lease Underwriting",
   "type": "Retail",
@@ -306,7 +336,8 @@ window.portfolio.studies.push({
       "url": "assets/lakefront-retail-long-term-lease/document-02.pdf"
     }
   ],
-  "excelEmbedUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQSKrML32Fn-SoLAxvDj51IrAUAL8tnQmizVMou8YRVUyf8?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&waccluster=PUS11&edaebp=&edaebf=res50",
+  "excelOpenUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQCKrML32Fn-SoLAxvDj51IrAQEhVRPiYX7cvRYPGou4LOI?e=la3exX",
+  "excelEmbedUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQCKrML32Fn-SoLAxvDj51IrAQEhVRPiYX7cvRYPGou4LOI?e=la3exX&action=embedview&wdAllowInteractivity=True&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&ActiveCell=%27Long-Term+Leases%27%21A1",
   "workbookUrl": "assets/lakefront-retail-long-term-lease/long-term-lease.xlsx",
   "description": "Lakefront Retail Center is a 136,775-square-foot grocery-anchored shopping center in Duluth, Minnesota. This course exercise models long-term lease cash flows, including base rent, concessions, reimbursements, and leasing costs. The analysis solves for an indicated acquisition price by discounting operating and reversion cash flows at an 8% unlevered target return, then verifies the result using XIRR. Additional metrics evaluate total investment profit, annual cash flow yields, expense recovery, and the relative contributions of income and reversion.",
   "question": "What acquisition price supports an 8% unlevered target return, and how do lease cash flows shape the investment outcome?",
@@ -325,6 +356,8 @@ window.portfolio.studies.push({
 // Uploaded case study 11.
 window.portfolio.studies.push({
   "id": "parcel-32",
+  "sequence": 11,
+  "capstone": false,
   "title": "Parcel 32",
   "subtitle": "Development Cash Flow Modeling",
   "type": "Development",
@@ -341,7 +374,8 @@ window.portfolio.studies.push({
       "url": "assets/parcel-32/document-02.docx"
     }
   ],
-  "excelEmbedUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQQnw3isHq9MRLS68ELrKPKOATI8UJvtXyCyceW-xyUFdAc?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&waccluster=PUS6&edaebp=&edaebf=res50",
+  "excelOpenUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQAnw3isHq9MRLS68ELrKPKOAWE9nneyZXiJOKryC8WD6Mc?e=vlUJFc",
+  "excelEmbedUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQAnw3isHq9MRLS68ELrKPKOAWE9nneyZXiJOKryC8WD6Mc?e=vlUJFc&action=embedview&wdAllowInteractivity=True&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&ActiveCell=%27Cover+Page%27%21A1",
   "workbookUrl": "assets/parcel-32/development-cash-flow.xlsx",
   "description": "Parcel 32 examines a potential office development on a vacant, unentitled parcel in the Miraflores neighborhood of Anytown. The exercise connects acquisition, entitlement, design, construction, lease-up, and exit assumptions in a monthly development cash flow model. The budget draws on supplied project information and construction cost references, while operating projections and terminal proceeds inform the assessment of unlevered project returns and development yield.",
   "question": "How do development costs, timing, leasing assumptions, and terminal value shape the projected returns for Parcel 32?",
@@ -357,6 +391,8 @@ window.portfolio.studies.push({
 // Uploaded case study 12.
 window.portfolio.studies.push({
   "id": "financing-the-foles",
+  "sequence": 12,
+  "capstone": false,
   "title": "Financing the Foles",
   "subtitle": "Acquisition Financing",
   "type": "Multifamily",
@@ -381,7 +417,8 @@ window.portfolio.studies.push({
       "url": "assets/financing-the-foles/document-04.pdf"
     }
   ],
-  "excelEmbedUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQSZCKu1EaaGR6AsR0ivh0V0AWHyz5ncIg_-mzUt4UiwtjE?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&waccluster=PUS11&edaebp=&edaebf=res50",
+  "excelOpenUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQCZCKu1EaaGR6AsR0ivh0V0AUIa6bStx-OE5_Nn4m5hvGg?e=zvcUbp",
+  "excelEmbedUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQCZCKu1EaaGR6AsR0ivh0V0AUIa6bStx-OE5_Nn4m5hvGg?e=zvcUbp&action=embedview&wdAllowInteractivity=True&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&ActiveCell=%27Levered+DCF%27%21A1",
   "workbookUrl": "assets/financing-the-foles/financing-the-foles.xlsx",
   "description": "Financing the Foles extends the multifamily acquisition analysis by incorporating bank debt into the investment cash flows. The exercise sizes the maximum loan under loan-to-value, debt service coverage, and debt yield constraints, then models interest-only payments, amortization, and the maturity payoff. Borrowing proceeds, debt service, and loan repayment flow through the DCF to evaluate levered investment returns and year-10 credit metrics.",
   "question": "How much debt can the acquisition support, and how does financing affect equity returns and credit coverage?",
@@ -397,6 +434,8 @@ window.portfolio.studies.push({
 // Uploaded case study 13.
 window.portfolio.studies.push({
   "id": "frost-and-main",
+  "sequence": 13,
+  "capstone": false,
   "title": "Frost and Main",
   "subtitle": "Partnership Cash Flow Modeling",
   "type": "Mixed-use",
@@ -405,7 +444,8 @@ window.portfolio.studies.push({
   "imageAlt": "Two people shaking hands across a table",
   "hasWarRoom": false,
   "documents": [],
-  "excelEmbedUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQTGmx8OQcGaQZEFGjJUJjDpAej4Yi_2GwhNmcv9sKDX-Mk?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&waccluster=PUS6&edaebp=&edaebf=res50",
+  "excelOpenUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQDGmx8OQcGaQZEFGjJUJjDpAfG_T8goiQwJGVuzU6tw_0w?e=0LuP5x",
+  "excelEmbedUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQDGmx8OQcGaQZEFGjJUJjDpAfG_T8goiQwJGVuzU6tw_0w?e=0LuP5x&action=embedview&wdAllowInteractivity=True&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&ActiveCell=%27Property-Level+Cash+Flow%27%21A1",
   "workbookUrl": "assets/frost-and-main/partnership-returns.xlsx",
   "description": "Frost and Main examines partnership cash flow allocations for a mixed-use development comprising 210 apartments and 40,000 square feet of ground-floor retail. The exercise links property-level levered cash flows through a GP–LP joint venture and a second Co-GP waterfall. Preferred returns, capital contributions, return of capital, and promote tiers shape the distributions to each partner, with a focus on the projected returns to Frost and Main Investors, LLC.",
   "question": "How does a double-promote partnership structure translate property cash flows into investor-level returns?",
@@ -421,13 +461,13 @@ window.portfolio.studies.push({
 // Case studies 14–16 are featured capstone projects.
 window.portfolio.capstoneStudyNumbers = [14, 15, 16];
 
-// Featured capstone 14.
+// Featured capstone 1.
 window.portfolio.studies.push({
   "id": "bronze-gym",
+  "sequence": 1,
+  "capstone": true,
   "title": "Bronze Gym",
   "subtitle": "Single-Tenant Acquisition Underwriting",
-  "sequence": 14,
-  "capstone": true,
   "type": "Retail",
   "label": "CAPSTONE PROJECT",
   "imageUrl": "assets/bronze-gym/cover.jpg",
@@ -446,7 +486,8 @@ window.portfolio.studies.push({
       "url": "assets/bronze-gym/document-03.pdf"
     }
   ],
-  "excelEmbedUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQRUXbmWioDDSqVLkC99YrZ6AdYFP0VlTOr1mhbIHCscxU0?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&waccluster=PUS11&edaebp=&edaebf=res50",
+  "excelOpenUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQBUXbmWioDDSqVLkC99YrZ6ASqCJYjS91T166u9QPaEHFg?e=3C42b7",
+  "excelEmbedUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQBUXbmWioDDSqVLkC99YrZ6ASqCJYjS91T166u9QPaEHFg?e=3C42b7&action=embedview&wdAllowInteractivity=True&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&ActiveCell=%27Summary%27%21A1",
   "workbookUrl": "assets/bronze-gym/single-tenant-acquisition.xlsx",
   "description": "Bronze Gym is a single-tenant retail acquisition capstone for 10000 Fitness Way, a property leased to a fitness operator under an absolute NNN lease. The model connects acquisition assumptions, annual lease cash flows, financing, terminal valuation, and a two-tier GP/LP waterfall. The analysis evaluates property-level returns, debt coverage, and partner-level distributions over a 10-year holding period.",
   "question": "How do lease income, financing, terminal value, and partnership terms combine to determine investment returns?",
@@ -460,13 +501,14 @@ window.portfolio.studies.push({
   "disclosure": "Acquisition capstone exercise. Property, tenant, and financing assumptions are supplied scenario inputs. Investment and partnership returns are projected."
 });
 
-// Featured capstone 15.
+// Featured capstone 2.
 window.portfolio.studies.push({
   "id": "sixteen-17th-street",
+  "sequence": 2,
+  "capstone": true,
+  "excelOpenUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQCUTrXu4kygTLgneXuaOtPrAdn0iYJmb7tfaYtwKbOW794?e=dqxwwu",
   "title": "Sixteen 17th Street",
   "subtitle": "Development Model",
-  "sequence": 15,
-  "capstone": true,
   "type": "Development",
   "label": "CAPSTONE PROJECT",
   "imageUrl": "assets/sixteen-17th-street/cover.jpg",
@@ -497,7 +539,7 @@ window.portfolio.studies.push({
       "url": "assets/sixteen-17th-street/document-06.pdf"
     }
   ],
-  "excelEmbedUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQSUTrXu4kygTLgneXuaOtPrAQIXFEoXvSRwsq8tI_Tdh54?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&waccluster=PUS6&edaebp=&edaebf=res50",
+  "excelEmbedUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQCUTrXu4kygTLgneXuaOtPrAdn0iYJmb7tfaYtwKbOW794?e=dqxwwu&action=embedview&wdAllowInteractivity=True&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&ActiveCell=%27Cover+Page%27%21A1",
   "workbookUrl": "assets/sixteen-17th-street/development-model.xlsx",
   "description": "Sixteen 17th Street is an office development capstone centered on a fully entitled site in the Miraflores neighborhood of Anytown, near the central business district. The underwriting model links development timing, project area, budget, leasing, operating projections, and financing to evaluate unlevered and levered project outcomes. Broker materials, project notes, comparable land sales, and interest-rate forward curves support the modeled assumptions.",
   "question": "How do development costs, lease-up timing, and financing shape the feasibility and projected returns of Sixteen 17th Street?",
@@ -510,13 +552,13 @@ window.portfolio.studies.push({
   "disclosure": "Development capstone exercise. Project details, budget, leasing, and financing assumptions are supplied scenario inputs. Returns, profit, and exit values are projections."
 });
 
-// Featured capstone 16.
+// Featured capstone 3.
 window.portfolio.studies.push({
   "id": "multifamily-value-add",
+  "sequence": 3,
+  "capstone": true,
   "title": "Multifamily Value Add",
   "subtitle": "Value-Add Acquisition Underwriting",
-  "sequence": 16,
-  "capstone": true,
   "type": "Multifamily",
   "label": "CAPSTONE PROJECT",
   "imageUrl": "assets/multifamily-value-add/cover.jpg",
@@ -527,7 +569,8 @@ window.portfolio.studies.push({
       "url": "assets/multifamily-value-add/technical-interview-test.pdf"
     }
   ],
-  "excelEmbedUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQSwcQ-ZdSYYQZaqOipTSQJJAXNS3wG8z8ted-XDxJceYNs?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&waccluster=PUS11&edaebp=&edaebf=res50",
+  "excelOpenUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQCwcQ-ZdSYYQZaqOipTSQJJAbQiPxmZR0249SWsroFLqzc?e=bZKGjb",
+  "excelEmbedUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQCwcQ-ZdSYYQZaqOipTSQJJAbQiPxmZR0249SWsroFLqzc?e=bZKGjb&action=embedview&wdAllowInteractivity=True&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&ActiveCell=%27Underwriting%27%21A1",
   "workbookUrl": "assets/multifamily-value-add/value-add-model.xlsx",
   "description": "This multifamily value-add capstone models the acquisition and renovation of a 240-unit apartment property. The analysis connects phased renovations and rent premiums with operating cash flows, senior and mezzanine financing, and eventual disposition. Property-level returns flow into a GP/LP partnership waterfall to evaluate the allocation of cash flows and the effect of the promote structure on investor outcomes.",
   "question": "How do renovation execution, operating improvements, leverage, and partnership terms shape a multifamily value-add investment?",
@@ -556,7 +599,8 @@ window.portfolio.calculators = {
   "imageUrl": "assets/calculators/cover.jpg",
   "imageAlt": "Scientific calculator and pen resting on handwritten calculations",
   "workbookUrl": "assets/calculators/calculators.xlsx",
-  "excelEmbedUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQSL62AQWciYTZznXgbFJkuqAQ4EnhjAFn_K4-_v4aEN6DI?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&waccluster=PUS6&edaebp=&edaebf=res50"
+  "excelOpenUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQCL62AQWciYTZznXgbFJkuqAfkBRkUZauJhyrULz2kpNeM?e=vW8KN5",
+  "excelEmbedUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQCL62AQWciYTZznXgbFJkuqAfkBRkUZauJhyrULz2kpNeM?e=vW8KN5&action=embedview&wdAllowInteractivity=True&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&ActiveCell=%27Amortization%27%21A1"
 };
 
 window.portfolio.waterfalls = [
@@ -582,3 +626,72 @@ window.portfolio.waterfalls = [
     "photographer": "Daniel Seßler"
   }
 ];
+
+// Regular case study 14: Parkside Apartments.
+window.portfolio.studies.push({
+  "id": "parkside-apartments",
+  "sequence": 14,
+  "capstone": false,
+  "title": "Parkside Apartments",
+  "subtitle": "DCF and Sensitivity Analysis",
+  "type": "Multifamily",
+  "label": "UNDERWRITING CASE STUDY",
+  "imageUrl": "assets/parkside-apartments/cover.png",
+  "imageAlt": "Concept illustration of the Parkside Apartments courtyard, pool, and apartment buildings at sunset",
+  "question": "Does the proposed acquisition price support the required return across occupancy and exit-cap-rate scenarios?",
+  "description": "Parkside Apartments is a fictional educational case evaluating a proposed $92.5 million acquisition of a 280-unit multifamily community in Austin, Texas. The five-year discounted cash flow model connects rent-roll assumptions, operating cash flows, amortizing debt, and terminal sale proceeds. Sensitivity analysis tests exit occupancy and capitalization rates against the stated 15% levered IRR hurdle.",
+  "approach": [
+    "Reconcile the rent roll, vacancy assumptions, and rental income for 280 apartments.",
+    "Forecast operating revenue, expenses, capital reserves, and net operating income over the five-year holding period.",
+    "Model 65% loan-to-value financing at a 4.75% fixed interest rate, including amortization and the loan payoff at sale.",
+    "Evaluate unlevered and levered cash flows, IRRs, and equity multiples.",
+    "Test exit occupancy and exit capitalization rates, compare the results with the 15% return hurdle, and review the acquisition-price recommendation."
+  ],
+  "documents": [
+    {
+      "name": "Offering Memorandum",
+      "url": "assets/parkside-apartments/offering-memorandum.pdf"
+    },
+    {
+      "name": "Investment Overview",
+      "url": "assets/parkside-apartments/investment-overview.png"
+    }
+  ],
+  "hasWarRoom": true,
+  "workbookUrl": "assets/parkside-apartments/dcf-sensitivity-analysis.xlsx",
+  "excelEmbedUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQCQ2DS8f5nwQLkQWC4RcLa7AdIXQ0-p-RjmE7GbxRL9CoU?e=ZjeitL&action=embedview&wdAllowInteractivity=True&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&ActiveCell=%27DCF%27%21A1",
+  "excelOpenUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQCQ2DS8f5nwQLkQWC4RcLa7AdIXQ0-p-RjmE7GbxRL9CoU?e=ZjeitL",
+  "disclosure": "Fictional educational underwriting case; cover imagery is concept art. Property and market descriptions are supplied scenario inputs, not verified property facts or market research. Returns are saved model projections, not realized performance. The model exits in year 5 using year 6 forward NOI."
+});
+
+// Featured capstone 4: Downtown vs. the Domain.
+window.portfolio.studies.push({
+  "id": "downtown-domain",
+  "sequence": 4,
+  "capstone": true,
+  "title": "Downtown vs. the Domain",
+  "subtitle": "Office Lease Comparison · Monthly DCF and Sensitivity Analysis",
+  "type": "Office",
+  "label": "CAPSTONE PROJECT",
+  "imageUrl": "assets/downtown-domain/cover.png",
+  "imageAlt": "Conceptual split illustration comparing a modern office campus in the Domain with Downtown Austin at sunset",
+  "question": "Which office lease offers lower occupancy cost over a common planning horizon, and when does that recommendation reverse?",
+  "description": "This hypothetical tenant-side capstone compares Downtown Austin and the Domain for Lone Star Technology Solutions over an 84-month planning horizon from January 2028 through December 2034. The analysis aligns a 60-month Downtown lease plus a modeled 24-month extension with an 84-month Domain lease. Monthly cash flows combine rent, abatements, expense reimbursements, parking, tenant improvements, construction, relocation, and a refundable deposit; discounted costs and sensitivity scenarios inform the recommendation.",
+  "approach": [
+    "Normalize both alternatives to an 84-month horizon, including the Downtown extension and each location’s different rentable area.",
+    "Model monthly base rent, annual escalations, expense reimbursements, and parking; apply four free base-rent months Downtown and seven in the Domain.",
+    "Include net construction after TI allowances, Domain relocation costs, and the timing of its refundable $100,000 deposit.",
+    "Discount monthly cash flows using the effective monthly equivalent of a 9% annual discount rate and compare present-value occupancy costs.",
+    "Test rent, parking, construction, relocation, extension terms, and discount rates; examine combined downside scenarios and negotiating thresholds."
+  ],
+  "hasWarRoom": true,
+  "documents": [
+    {
+      "name": "Portfolio Case Study",
+      "url": "assets/downtown-domain/portfolio-case-study.pdf"
+    }
+  ],
+  "excelEmbedUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQCeroxgoe7SQZmShoQHIEQzAWIbdC5i7DqYl5pXczNBthc?e=Zn8yjd&action=embedview&wdAllowInteractivity=True&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&ActiveCell=%27Recommendation%27%21A1",
+  "excelOpenUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQCeroxgoe7SQZmShoQHIEQzAWIbdC5i7DqYl5pXczNBthc?e=Zn8yjd",
+  "disclosure": "Hypothetical educational lease comparison; inputs are supplied case assumptions, not verified current lease offers. The cover is conceptual imagery. Reported results are sourced from the supplied PDFs; the Excel workbook has not yet been provided or independently recalculated. The image states eight Domain free-rent months, while both source PDFs specify seven; the written analysis follows the PDFs."
+});

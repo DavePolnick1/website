@@ -715,5 +715,101 @@ window.portfolioMetrics = {
     ],
     "note": "Renovation costs and rent premiums drive the value-add cash flows. Senior and mezzanine financing affect equity returns, while the partnership waterfall allocates distributions between the LP and GP. Untrended yield on cost is a separate operating yield measure.",
     "summary": "The capstone projects a 35.18% levered IRR and a 2.36× equity multiple, with a 6.44% untrended yield on cost. The modeled partnership produces a 29.80% LP IRR and a 98.09% GP IRR on their respective cash flows."
+  },
+  "parkside-apartments": {
+    "title": "DCF and sensitivity findings",
+    "period": "Projected · 2027–2031 hold; exit uses year 6 forward NOI",
+    "items": [
+      {
+        "label": "Purchase price",
+        "value": "$92,500,000",
+        "source": "DCF!C9"
+      },
+      {
+        "label": "Year 1 net operating income",
+        "value": "$3,867,864",
+        "source": "DCF!D56"
+      },
+      {
+        "label": "Unlevered IRR",
+        "value": "3.31%",
+        "source": "DCF!M5"
+      },
+      {
+        "label": "Levered IRR",
+        "value": "0.49%",
+        "source": "DCF!M10"
+      },
+      {
+        "label": "Levered equity multiple",
+        "value": "1.02×",
+        "source": "DCF!M11"
+      },
+      {
+        "label": "Senior loan amount",
+        "value": "$60,125,000",
+        "source": "DCF!H5"
+      },
+      {
+        "label": "Exit capitalization rate",
+        "value": "5.25%",
+        "source": "DCF!C14"
+      },
+      {
+        "label": "Best tested levered IRR",
+        "value": "7.65%",
+        "source": "Sensitivity Analysis!D10"
+      }
+    ],
+    "note": "Values use the saved workbook calculation results, not a fresh Excel recalculation. The best tested sensitivity result pairs 98% exit occupancy with a 4.75% exit capitalization rate. Supplied offering and overview materials contain scenario assumptions; the modeled sale occurs in year 5 using year 6 NOI.",
+    "summary": "At the proposed $92.5 million acquisition price, the model projects a 0.49% levered IRR and a 1.02× equity multiple. Even the best tested sensitivity scenario reaches only 7.65%, below the stated 15% hurdle. The workbook recommends declining at the asking price or negotiating a lower basis."
+  },
+  "downtown-domain": {
+    "title": "Lease economics and decision drivers",
+    "period": "Document-reported projections · January 2028–December 2034 · 84 months",
+    "items": [
+      {
+        "label": "Downtown PV occupancy cost",
+        "value": "$8,260,084",
+        "source": "Technical Model Study Guide, p. 3"
+      },
+      {
+        "label": "Domain PV occupancy cost",
+        "value": "$7,193,463",
+        "source": "Technical Model Study Guide, p. 3"
+      },
+      {
+        "label": "Domain base-case PV advantage",
+        "value": "$1,066,621",
+        "source": "Technical Model Study Guide, p. 3"
+      },
+      {
+        "label": "Domain PV savings vs. Downtown",
+        "value": "12.9%",
+        "source": "Portfolio Case Study, p. 1"
+      },
+      {
+        "label": "Downtown initial cash requirement",
+        "value": "$375,000",
+        "source": "Portfolio Case Study, p. 1"
+      },
+      {
+        "label": "Domain initial cash requirement",
+        "value": "$855,000",
+        "source": "Portfolio Case Study, p. 1"
+      },
+      {
+        "label": "Domain starting-rent break-even",
+        "value": "$54.08/RSF/year",
+        "source": "Technical Model Study Guide, p. 4"
+      },
+      {
+        "label": "Severe downside: Domain disadvantage",
+        "value": "$84,074",
+        "source": "Technical Model Study Guide, p. 4"
+      }
+    ],
+    "summary": "The supplied analysis favors the Domain in the base case, with approximately $1.07 million lower present-value occupancy cost at a 9% annual discount rate. It requires $480,000 more initial cash. In the severe combined downside scenario, Downtown becomes approximately $84,000 cheaper on a present-value basis, showing that the recommendation depends on several lease assumptions moving together.",
+    "note": "Figures are reported in the supplied PDFs, not independently recalculated workbook outputs. Dollar values are rounded. Break-even thresholds are single-variable model results, not market forecasts; combined downside cases are deterministic stress tests. Location, operational fit, lease definitions, and landlord terms require separate diligence."
   }
 };
