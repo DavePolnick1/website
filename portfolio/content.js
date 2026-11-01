@@ -691,7 +691,8 @@ window.portfolio.studies.push({
       "url": "assets/downtown-domain/portfolio-case-study.pdf"
     }
   ],
+  "workbookUrl": "assets/downtown-domain/office-lease-comparison.xlsx",
   "excelEmbedUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQCeroxgoe7SQZmShoQHIEQzAWIbdC5i7DqYl5pXczNBthc?e=Zn8yjd&action=embedview&wdAllowInteractivity=True&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&ActiveCell=%27Recommendation%27%21A1",
   "excelOpenUrl": "https://1drv.ms/x/c/bf262fc105179c19/IQCeroxgoe7SQZmShoQHIEQzAWIbdC5i7DqYl5pXczNBthc?e=Zn8yjd",
-  "disclosure": "Hypothetical educational lease comparison; inputs are supplied case assumptions, not verified current lease offers. The cover is conceptual imagery. Reported results are sourced from the supplied PDFs; the Excel workbook has not yet been provided or independently recalculated. The image states eight Domain free-rent months, while both source PDFs specify seven; the written analysis follows the PDFs."
+  "disclosure": "Hypothetical educational lease comparison; inputs are supplied case assumptions, not verified current lease offers. The cover is conceptual imagery. Reported results are sourced from the supplied PDFs; the uploaded workbook’s saved present-value totals reconcile to the PDF comparison. No fresh Excel recalculation has been performed. The image states eight Domain free-rent months, while both source PDFs specify seven; the written analysis follows the PDFs."
 });
